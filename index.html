@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화곡 셔츠룸 – 마포 주식투자 정보 | SF-T3</title>
+    <meta name="description" content="마포 지역 주식투자 커뮤니티, 화곡 셔츠룸에서 실전 투자 전략과 리뷰를 나눠요. 부담 없는 분위기, 진짜 정보만 모았습니다. ☎ 010-6279-0862">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 주식투자, 화곡 주식, 마포 셔츠룸, 주식 커뮤니티, 실전 투자, 화곡 투자모임">
+    <meta name="author" content="SF-T3">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <link rel="canonical" href="https://sf-t3-1779642675702-200.vercel.app">
+    <meta property="og:title" content="화곡 셔츠룸 – 마포 주식투자 정보">
+    <meta property="og:description" content="마포 지역 주식투자 커뮤니티, 화곡 셔츠룸에서 실전 투자 전략과 리뷰를 나눠요. 부담 없는 분위기, 진짜 정보만 모았습니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-200.vercel.app">
+    <meta property="og:image" content="https://sf-t3-1779642675702-200.vercel.app/og-image.svg">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="화곡 셔츠룸 – 마포 주식투자 정보">
+    <meta name="twitter:description" content="마포 지역 주식투자 커뮤니티, 화곡 셔츠룸에서 실전 투자 전략과 리뷰를 나눠요. 부담 없는 분위기, 진짜 정보만 모았습니다.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-200.vercel.app/og-image.svg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "화곡 셔츠룸",
+        "description": "마포 지역 주식투자 커뮤니티, 실전 투자 전략과 리뷰를 공유하는 공간입니다.",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "url": "https://sf-t3-1779642675702-200.vercel.app",
+        "areaServed": ["마포구", "화곡동"],
+        "priceRange": "₩₩"
+    }
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary: #2e2522;
+            --secondary: #fcf8f2;
+            --accent: #7f5539;
+            --font: system-ui, 'Inter', -apple-system, sans-serif;
+            --gap: 32px;
+            --padding: 48px;
+            --section-gap: 80px;
+            --max-width: 960px;
+            --border-thin: 1px solid #2e2522;
+            --transition: 0.2s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--secondary);
+            color: var(--primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--padding);
+        }
+
+        /* Header & Nav */
+        header {
+            background: var(--secondary);
+            border-bottom: var(--border-thin);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(2px);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding-left: var(--padding);
+            padding-right: var(--padding);
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--gap);
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color var(--transition);
+        }
+
+        .nav-links a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--secondary);
+            border-bottom: var(--border-thin);
+            padding: 16px var(--padding);
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 12px 0;
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: var(--border-thin);
+            font-weight: 500;
+        }
+
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0;
+            border-bottom: var(--border-thin);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--gap);
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            margin-bottom: 24px;
+            color: #4a3f3a;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 14px 40px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--primary);
+            transition: background var(--transition), color var(--transition);
+        }
+
+        .hero-cta:hover {
+            background: transparent;
+            color: var(--primary);
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 280px;
+            border: 2px solid var(--primary);
+            background: repeating-linear-gradient(
+                45deg,
+                var(--secondary) 0px,
+                var(--secondary) 8px,
+                #ece4d8 8px,
+                #ece4d8 16px
+            );
+            font-size: 4rem;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* Section */
+        .section {
+            padding: var(--section-gap) 0;
+            border-bottom: var(--border-thin);
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--gap);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--gap);
+        }
+
+        .card {
+            border: 2px solid var(--primary);
+            padding: 24px;
+            background: var(--secondary);
+            transition: transform var(--transition), border-color var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #4a3f3a;
+        }
+
+        .review-card {
+            border: 2px solid var(--primary);
+            padding: 24px;
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            color: #5a4f4a;
+        }
+
+        .review-stars {
+            color: var(--accent);
+            letter-spacing: 2px;
+        }
+
+        .review-card blockquote {
+            font-style: normal;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        /* About / Info */
+        .info-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            list-style: none;
+        }
+
+        .info-list li {
+            border-bottom: var(--border-thin);
+            padding: 12px 0;
+            display: flex;
+            gap: 8px;
+        }
+
+        .info-list li strong {
+            min-width: 80px;
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            border-top: var(--border-thin);
+            padding: 48px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #5a4f4a;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        footer a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--gap);
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .phone-link {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --padding: 24px;
+                --gap: 24px;
+                --section-gap: 48px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-visual {
+                height: 200px;
+                font-size: 3rem;
+                order: -1;
+            }
+
+            .info-list {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-cta {
+                padding: 12px 28px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="nav-inner">
+        <a href="/" class="logo">화곡<span>셔츠룸</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">소개</a></li>
+            <li><a href="#reviews">리뷰</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+        <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">소개</a>
+        <a href="#reviews">리뷰</a>
+        <a href="#contact">연락처</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>화곡 셔츠룸,<br>주식 얘기 나눠요</h1>
+                <p>마포에서 모이는 주식투자 커뮤니티. 셔츠 하나 걸치고 오면 돼요. 부담 없이, 진짜 정보만.</p>
+                <a href="tel:+821062790862" class="hero-cta">📞 전화 걸기</a>
+            </div>
+            <div class="hero-visual">
+                📈💰
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">이런 곳이에요</h2>
+            <p style="margin-bottom: var(--gap); font-size: 1.1rem;">
+                화곡 셔츠룸은 마포 지역에서 주식투자에 관심 있는 사람들이 모이는 자리예요. 
+                정장 필요 없고, 그냥 셔츠 하나 입고 오면 됩니다. 매주 다른 주제로 이야기하고, 
+                서로의 포트폴리오도 가볍게 공유해요. 주린이도, 고수도 환영!
+            </p>
+            <ul class="info-list">
+                <li><strong>지역</strong> 마포구 (화곡 인근)</li>
+                <li><strong>모임</strong> 매주 수요일 저녁 7시</li>
+                <li><strong>분위기</strong> 편한 수다 + 실전 투자 팁</li>
+                <li><strong>문의</strong> <a href="tel:+821062790862" style="color:var(--accent);">010-6279-0862</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <h2 class="section-title">사람들 이야기</h2>
+            <div class="card-grid">
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span><strong>동네주린이</strong> · 2025-03-12</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <blockquote>“처음 가봤는데 너무 편했어요. 셔츠룸 이름이 약간 거창한데, 실제로는 아무나 와도 되는 분위기. 주식 얘기만 3시간 했네요.”</blockquote>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span><strong>마포개미</strong> · 2025-02-28</span>
+                        <span class="review-stars">★★★★☆</span>
+                    </div>
+                    <blockquote>“정보 공유가 진짜 활발해요. 여기서 들은 종목 두 개 수익 냈습니다. 별 하나 뺀 건 커피가 좀 쓰려서… 그래도 또 갈 의향 있어요.”</blockquote>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span><strong>화곡동사는형</strong> · 2025-02-14</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <blockquote>“10년 차 투자자인데, 여기 사람들 수준 괜찮네요. 막힘없이 토론되고, 서로 존중하는 분위기. 앞으로 자주 올 듯.”</blockquote>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span><strong>주식초보탈출</strong> · 2025-01-30</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <blockquote>“초보라고 쫄 필요 전혀 없어요. 다들 친절하게 알려주고, 모르는 거 물어보면 잘 가르쳐줘요. 강추!”</blockquote>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span><strong>셔츠맨</strong> · 2025-01-15</span>
+                        <span class="review-stars">★★★★☆</span>
+                    </div>
+                    <blockquote>“모임 장소가 깔끔하고 좋아요. 주차가 조금 빡빡한데, 대중교통 이용하면 괜찮습니다. 다음엔 셔츠 빼입고 갈게요 ㅋㅋ”</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Info Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">연락 &amp; 위치</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap);">
+                <div>
+                    <p style="margin-bottom: 16px;"><strong>전화 문의는 언제든 환영</strong> — 부담 없이 걸러요.</p>
+                    <a href="tel:+821062790862" class="phone-link" style="display: block; font-size: 1.5rem; padding: 16px 0; border-bottom: 2px solid var(--primary);">📞 010-6279-0862</a>
+                    <p style="margin-top: 16px; font-size: 0.95rem;">문자도 OK. “셔츠룸”이라고 보내주시면 자세한 위치 알려드릴게요.</p>
+                </div>
+                <div style="border: 2px solid var(--primary); padding: 32px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <span style="font-size: 3rem; margin-bottom: 8px;">📍</span>
+                    <p><strong>서울 마포구</strong><br>화곡동 인근 (자세한 주소는 전화주세요)</p>
+                    <p style="margin-top: 12px; font-size: 0.9rem;">※ 지도는 준비 중입니다. 전화나 문자로 안내드려요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 2023년 겨울, 홍대 상권에서 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략을 살펴보자. 그 중에서도 화곡 셔츠룸을 중심으로 본 경험을 통해 조금 더 깊이 들어볼까. ### 폐업 이유와 살아남은 셔츠룸의 특징#### 폐업 이유첫 번째로는 </p>
+      </div>
+      <a href="posts/review-001-hiy4g4.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#about">소개</a>
+            <a href="#reviews">리뷰</a>
+            <a href="tel:+821062790862">전화문의</a>
+        </div>
+        <p>© 2025 화곡 셔츠룸 · 마포 주식투자 커뮤니티</p>
+        <p style="margin-top: 8px; font-size: 0.8rem;">SF-T3 · All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        const hamburger = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            const isOpen = mobileMenu.classList.contains('active');
+            hamburger.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+        });
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                hamburger.setAttribute('aria-label', '메뉴 열기');
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

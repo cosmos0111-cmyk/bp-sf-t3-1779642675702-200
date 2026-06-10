@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화곡 셔츠룸 | 마포 주식투자 정보</title>
+    <meta name="description" content="마포구 화곡동 주식투자자 전용 셔츠룸 상세정보. 거래소보다 뜨거운 전략회의, 지금 바로 예약하라. 010-6279-0862.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, 주식투자, 화곡동, 셔츠룸, vip라운지, 증권가, 투자모임, sf-t3-1779642675702-200">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-200.vercel.app/info">
+    <meta property="og:title" content="화곡 셔츠룸 | 마포 주식투자자들의 은밀한 공간">
+    <meta property="og:description" content="거래소보다 뜨거운 전략회의. 화곡동 셔츠룸에서 진짜 투자자들이 모인다. 010-6279-0862">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: 'Courier New', Courier, monospace; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; min-height: 100vh; }
+        img, svg { max-width: 100%; display: block; }
+        a { color: #ff0055; text-decoration: none; }
+        a:hover { color: #00ffcc; }
+        ul { list-style: none; }
+
+        h1 { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; line-height: 1; color: #ff0055; text-shadow: 4px 4px 0 #00ffcc; }
+        h2 { font-size: 2.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; color: #f0f0f0; border-left: 6px solid #ff0055; padding-left: 1rem; margin: 2rem 0 1rem; }
+        h3 { font-size: 1.4rem; font-weight: 700; text-transform: uppercase; color: #00ffcc; }
+        p { margin-bottom: 1rem; font-size: 1rem; }
+        .mono { font-family: 'Courier New', monospace; letter-spacing: 1px; }
+        .accent { color: #ff0055; font-weight: 700; }
+        .bg-accent { background: #ff0055; color: #0a0a0a; padding: 0.2rem 0.6rem; display: inline-block; }
+        .skew { transform: skewX(-8deg); display: inline-block; }
+        .rotate-neg { transform: rotate(-2deg); }
+        .rotate-pos { transform: rotate(2deg); }
+        .border { border: 2px solid #ff0055; padding: 0.5rem; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; background: #111; border-bottom: 3px solid #ff0055; position: sticky; top: 0; z-index: 100; }
+        nav .logo { font-size: 1.8rem; font-weight: 900; color: #ff0055; text-transform: uppercase; letter-spacing: -1px; }
+        nav .logo span { color: #00ffcc; }
+        nav ul { display: flex; gap: 2rem; }
+        nav ul li a { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #e0e0e0; transition: color 0.2s; }
+        nav ul li a:hover { color: #00ffcc; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 30px; height: 3px; background: #ff0055; transition: 0.3s; }
+
+        .hero { padding: 4rem 0; border-bottom: 2px solid #333; }
+        .hero h1 { font-size: 4rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 600px; }
+
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 3rem 0; }
+        .info-card { background: #151515; padding: 2rem; border-left: 4px solid #ff0055; }
+        .info-card h3 { margin-bottom: 1rem; }
+        .info-card p { font-size: 0.95rem; color: #ccc; }
+        .info-card .highlight { color: #00ffcc; font-weight: 700; }
+
+        .faq { padding: 3rem 0; border-top: 2px solid #333; }
+        .faq-item { margin-bottom: 1.5rem; padding: 1rem; background: #111; border: 1px solid #333; }
+        .faq-item h3 { font-size: 1.2rem; margin-bottom: 0.5rem; cursor: pointer; }
+        .faq-item p { font-size: 0.9rem; color: #aaa; }
+
+        .cta-section { padding: 4rem 0; text-align: center; background: #111; border-top: 3px solid #ff0055; margin-top: 2rem; }
+        .cta-section h2 { border-left: none; font-size: 2.5rem; }
+        .cta-section .tel-link { display: inline-block; margin-top: 1.5rem; padding: 1rem 3rem; background: #ff0055; color: #0a0a0a; font-weight: 900; font-size: 1.8rem; text-transform: uppercase; letter-spacing: 3px; border: none; cursor: pointer; transition: 0.2s; }
+        .cta-section .tel-link:hover { background: #00ffcc; color: #0a0a0a; }
+
+        footer { padding: 2rem 0; border-top: 1px solid #333; text-align: center; font-size: 0.8rem; color: #666; }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            nav ul { display: none; flex-direction: column; position: absolute; top: 80px; left: 0; right: 0; background: #111; padding: 1rem; border-bottom: 3px solid #ff0055; }
+            nav ul.active { display: flex; }
+            .info-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            .cta-section .tel-link { font-size: 1.4rem; padding: 0.8rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">화곡<span>셔츠룸</span></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="/">홈</a></li>
+            <li><a href="/info">정보</a></li>
+            <li><a href="tel:01062790862">예약</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="skew">정보 <span class="accent">+</span> 진실</h1>
+            <p class="mono">화곡동의 핵심. 주식투자자들이 <span class="accent">은밀하게</span> 모이는 이유. 여기 모든 정보를 공개한다.</p>
+        </div>
+    </section>
+
+    <section class="container info-grid">
+        <div class="info-card">
+            <h3>위치 <span class="highlight">시그널</span></h3>
+            <p>마포구 화곡동. 지하철 5호선 화곡역 3번 출구 도보 3분. 주차 가능. 투자자들의 접근성을 최우선으로 설계된 공간.</p>
+            <p class="accent">주소: 서울특별시 마포구 화곡동 123-45</p>
+        </div>
+        <div class="info-card">
+            <h3>운영 <span class="highlight">시간</span></h3>
+            <p>월-금: 14:00 - 04:00<br>토: 16:00 - 06:00<br>일: 휴무 (단, 예약 시 오픈 가능)</p>
+            <p class="mono">*장 마감 후 바로 달려와라. 밤이 더 뜨겁다.</p>
+        </div>
+        <div class="info-card">
+            <h3>멤버십 <span class="highlight">조건</span></h3>
+            <p>주식투자자 인증 필수. 계좌 내역 or 증권사 앱 제시. 초보 환영, 단 진지한 투자자만.</p>
+            <p class="accent">월 회비: 300,000원 (첫 달 50% 할인)</p>
+        </div>
+        <div class="info-card">
+            <h3>제공 <span class="highlight">서비스</span></h3>
+            <p>프라이빗 라운지, 24시간 차트 모니터, 위스키 바, 시가 라운지, 전략 회의실. 모든 것은 투자를 위해.</p>
+            <p class="mono">*음료 및 주류는 별도.</p>
+        </div>
+    </section>
+
+    <section class="container faq">
+        <h2>자주 묻는 <span class="accent">질문</span></h2>
+        <div class="faq-item">
+            <h3>Q: 예약은 어떻게 하나요?</h3>
+            <p>A: 전화 010-6279-0862로 3초만에 예약. 카카오톡 ID: hwagokshirt. 문자도 가능.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: 주식 투자 경험이 없어도 되나요?</h3>
+            <p>A: 된다. 단, '왜 투자하는가'에 대한 답변을 준비해와라. 우리는 진지한 사람들을 원한다.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: 여성 투자자도 이용 가능한가요?</h3>
+            <p>A: 당연하다. 시장은 성별을 가리지 않는다. 우리 공간도 마찬가지다.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: 최소 이용 시간이 있나요?</h3>
+            <p>A: 2시간. 그 이하는 예약 불가. 진지한 전략 회의를 위해 충분한 시간을 투자하라.</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>지금 <span class="accent">예약</span>하라</h2>
+            <p class="mono">거래소는 닫혀도 전략 회의는 계속된다. 화곡동 셔츠룸, 너의 다음 수익을 기다린다.</p>
+            <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 화곡 셔츠룸. 마포구 화곡동. All rights reserved. 투자는 개인의 책임입니다.</p>
+            <p class="mono">문의: 010-6279-0862 | 운영시간: 14:00-04:00</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
